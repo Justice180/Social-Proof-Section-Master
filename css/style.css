@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "League Spartan", sans-serif;
+}
+
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px;
+}
+
+h1{
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  width: 200px;
+}
+
+.main-text{
+  color: hsl(303, 10%, 53%);
+  width: 350px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.stars{
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.p-rating{
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.flex-container{
+  display: flex;
+  gap: 140px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+
+.star-flex{
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  padding: 15px 20px;
+  /* margin-bottom: 8px; */
+  gap: 15px;
+  border-radius: 8px;
+}
+
+.star-flex:nth-child(2){
+  margin: 0.7rem -3rem 0 2rem;
+}
+
+.star-flex:nth-child(3){
+  margin: 0.7rem -6rem 0rem 6rem;
+}
+
+.flex-left{
+  margin-left: 10px;
+
+}
+
+.social-row{
+  display: flex;
+}
+
+.user-info{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card{
+  background-color: hsl(300, 43%, 22%);
+  margin: 10px;
+  padding: 25px;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.user-stat{
+  color: hsl(333, 80%, 67%);
+}
+
+.user-name{
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+
+.user-img{
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-review{
+  color: hsl(300, 24%, 96%);
+}
+
+.box-2{
+  margin-top: 30px;
+}
+
+.box-3{
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 576px){
+
+  .container{
+    padding: 10px;
+    /* overflow-x: hidden; */
+    width: 300px;
+    margin: 40px;
+    align-items: center;
+  }
+
+  .flex-container{
+    display: block;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .star-flex{
+    display: block;
+    margin: 10px;
+    padding: 10px 15px;
+    width: 250px;
+  }
+
+  .star-flex:nth-child(2){
+    margin: 0 0 10px 5px;
+  }
+
+  .star-flex:nth-child(3){
+    margin: 0 0 0 5px;
+  }
+
+  .social-row{
+    display: block;
+  }
+
+  .card{
+    width: 250px;
+    margin: 5px;
+  }
+  
+  .user-info{
+    margin-bottom: 30px;
+  }
+
+  .main-text{
+    width: 270px;
+  }
+
+  .stars{
+    margin-bottom: 10px;
+  }
+
+}
